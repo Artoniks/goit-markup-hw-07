@@ -3,13 +3,14 @@
     --main-font-color: #434455;
     --main-active-color: #4D5AE5;
     --hero-bg-color: #2E2F42;
-    ;
+
     --main-text-color: #2E2F42;
     --logo-part-color: #2E2F42;
     --menu-button-color: #E7E9FC;
     --active-button-color: #188CE8;
     --active-bg-color: #404BBF;
     --cloud-color: #F4F4FD;
+    
     --navy-blue-color: #2E2F42;
     --border-color: #8E8F99;
     --green-color: #31d0aa;
@@ -191,7 +192,7 @@ ul {
 
 /* HERO */
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
@@ -975,11 +976,17 @@ input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: var(--active-bg-color);
+  
 }
 
 .modal-close-icon-btn {
     fill: var(--hero-bg-color);
+}
+.modal-close-icon-btn:hover,
+.modal-close-icon-btn:focus{
+    fill: var(--main-light-color);
 }
 
 
@@ -1070,53 +1077,7 @@ input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-
 
 
 
-/* 320 < Screen < 428
-@media screen and (max-width:428px) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bg-mob.jpg);
-    }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bg-mob@2x.jpg);
-        }
-
-    }
-}
-
-/* 429 < Screen < 768 */
-/* @media screen and (min-width:429px) and (max-width:767px) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bg-tab.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bg-tab@2x.jpg);
-        }
-
-    }
-} */
-
-/* @media screen and (min-width:768px) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bg-desk.jpg);
-        max-width: 1440px;
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bg-desk@2x.jpg);
-        }
-
-    }
-/* } */
 
 .mobile-mail-link {
     color: var(--main-font-color);
@@ -1343,11 +1304,11 @@ input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-
     }
 
     .advant-board {
-        width: calc((100% - 72px) / 4);
+        width: calc((100% - 72px)/4);
     }
 
     .card {
-        width: calc((100% - 72px) / 4);
+        width: calc((100% - 72px)/4);
     }
 
     .customers-list {
