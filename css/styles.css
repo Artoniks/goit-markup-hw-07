@@ -986,7 +986,7 @@ input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-
 }
 .modal-close-icon-btn:hover,
 .modal-close-icon-btn:focus{
-    fill: var(--main-light-color);
+    fill: var(--main-light-color) ;
 }
 
 
